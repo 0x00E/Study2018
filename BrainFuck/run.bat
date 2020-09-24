@@ -1,0 +1,2 @@
+BrainFuck okcoin.bf
+PAUSE
