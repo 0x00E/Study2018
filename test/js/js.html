@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+ <input type="button" id="hidden" value="隐藏/显示">
+<div id="d0">
+  <p>名字 : <input type="text"  id="name"></p>
+  <h1 id="test">Hello </h1>
+</div>
+<div id="d1">
+</div>
+</body>
+</html>
+<script>
+
+function createXmlHttp() {
+    if (window.XMLHttpRequest) {
+       xmlHttp = new XMLHttpRequest(); 
+    } else {
+       xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+}
+function $(Nid){
+ return document.getElementById(Nid);
+}
+function getSource() {
+
+    var url = "http://127.0.0.1/js/t.php"; 
+   text = "正在加载……";
+    createXmlHttp();
+    xmlHttp.onreadystatechange = writeSource;
+	xmlHttp.overrideMimeType("text/html;charset=gbk");
+	xmlHttp.open("GET", url, true);
+	xmlHttp.send("name="+encodeURI(encodeURI("GBK"))); 
+}
+function writeSource() {
+
+    if (xmlHttp.readyState == 4) {
+        text = xmlHttp.responseText;
+		obj = JSON.parse(text);
+		for(var i=0;i<3;i++){
+			d1.innerHTML+=obj.sites[i].Name + " " + obj.sites[i].Country+"<br>";
+		}
+	
+    }
+}
+getSource();
+var obj=document.getElementById("name");
+var t=document.getElementById("test");
+var d0=document.getElementById("d0");
+var hidden=document.getElementById("hidden");
+var c=t.innerHTML;
+var d1=document.getElementById("d1");
+hidden.onclick=function(){
+	if(d0.style.display!="none"){
+	d0.style.display="none";
+	}else{
+	d0.style.display="";
+	}
+}
+obj.oninput=function(){
+t.innerHTML=c+obj.value;
+}    
+</script>

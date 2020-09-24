@@ -1,0 +1,15 @@
+/* CSS Document */
+*{ margin:0px; padding:0px}
+.admin{ display:block; margin-right:24px}
+input{ padding-top:0; padding-bottom:0; font-family:Verdana, Geneva, sans-serif,"宋体";}
+.aaa{ width:200px; border:1px solid #600; margin-top:12px; margin-left:80%}
+.aaa h4{ height:35px; border-bottom:1px dashed #00CC00; background:#666; line-height:35px; text-indent:5px}
+.aaa label{ display:block; height:25px; line-height:25px; font-size:14px; text-indent:3px}
+.sss,.ddd,.code0{ width:150px; height:20px; line-height:20px; margin-left:20px; border:1px solid #0F0; padding-left:20px}
+.sss{ background:url(../img/q_03.jpg) no-repeat}
+.ddd{ background:url(../img/q_06.jpg) no-repeat}
+.aaa p{ height:30px; line-height:30px; text-align:center}
+.qqq,.www{ height:21px; width:54px; margin:3px; border:none}
+.qqq{ background:url(../img/q_09.jpg) no-repeat}
+.www{ background:url(../img/q_11.jpg) no-repeat}
+input,textarea{outline:none;}

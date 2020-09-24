@@ -1,0 +1,30 @@
+@media screen and (max-width: 1080px) { 
+html{ font-size:100%; }
+} 
+@media screen and (max-width: 720px) { 
+html{ font-size:62.5%; }
+} 
+*{ margin:0px; padding:0px; font-family:Arial, "微软雅黑","宋体"; -webkit-text-size-adjust: none;}
+a{  text-decoration:none; color:#000;}
+body{ background:#ccc; max-width:1080px; margin:0 auto;}
+
+#user{background:orange; font-size:3rem;}
+
+#owner{  margin:0px auto; background:#0F6;  display:block; border-radius:10px; }
+#top{ margin:0 auto; text-align:center;}
+#top a{ text-decoration:none; display:block;  float:left; margin-left:20px; font-size:5rem;}
+.clear{clear:both; font-size:0px; width:0px; height:0px;}
+.art{ margin:0px auto;  font-size:3rem;}
+.art b{text-align:center; display:block;}
+#banner{ margin:0 auto; height:10rem; background:#999; line-height:50px; text-align:center;}
+#banner b{ font-size:5rem; line-height:10rem;}
+#main{font-size:3rem;}
+#main a{ display:block; line-height:10rem; font-size:5rem; border-bottom:1px solid #000; text-decoration:none; background:#FF9;}
+#down{ text-align:center; line-height:5rem; background:red; color:white; font-size:3rem;}
+.noalt{font-size:3rem;}
+#link{ text-align:center; line-height:5rem;background:red;color:white; font-size:3rem;}
+#down a,#link a{color:#fff; font-size:3rem;}
+#gotop{ position:fixed; right:250px; bottom:10px; display:none;}
+.big{ margin:0px auto; font-size:10rem; height:15rem; line-height:15rem; text-align:center;}
+input{ height:10rem; width:100%; font-size:7.5rem; border-radius:10rem; background:yellow;}
+textarea{ width:80%; display:block; margin:5rem auto; border-radius:1rem; border:3px solid #ccc; height:15rem; font-size:5rem;}

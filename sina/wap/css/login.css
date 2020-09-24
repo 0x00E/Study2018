@@ -1,0 +1,20 @@
+*{ margin:0px; padding:0px; font-family:Arial, "微软雅黑","宋体"; text-align::center;}
+a{  text-decoration:none; color:#000;text-align::center;}
+body{ background:#ccc; max-width:1080px; margin:0 auto; font-size:5rem}
+html{ font-size:62.5%;}
+#user{background:orange;color:blue;}
+#owner{  margin:0px auto; background:#0F6; height:100%; display:block; border-radius:10px; }
+#top{ margin:0 auto; text-align:center;}
+#top a{ text-decoration:none; display:block;  float:left; margin-left:20px; width:10rem; font-size:5rem;}
+.clear{clear:both; font-size:0px; width:0px; height:0px;}
+.art{ margin:0px auto;  }
+.art b{text-align:center; display:block;}
+#banner{ margin:0 auto; height:10rem; background:#999; line-height:50px; text-align:center;}
+#banner b{ font-size:5rem; line-height:10rem;}
+#main{}
+#main a{  line-height:10rem; font-size:5rem; border-bottom:1px solid #000; text-decoration:none; background:#FF9;}
+#down{ text-align:center; line-height:5rem; color:#666;}
+#gotop{ position:fixed; right:250px; bottom:10px; display:none;}
+.big{ margin:0px auto; font-size:10rem; height:15rem; line-height:15rem; text-align:center; width:100%;}
+.text{ height:7.5rem; width:100%; font-size:5rem; margin:1rem 0;}
+.sub{ height:10rem; width:100%; font-size:7.5rem; border-radius:10rem; background:yellow;}
